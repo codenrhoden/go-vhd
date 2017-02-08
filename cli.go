@@ -1,14 +1,16 @@
 package main
 
 import (
-	"./vhd"
 	"fmt"
-	"github.com/codegangsta/cli"
-	"github.com/dustin/go-humanize"
 	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
+
+	"github.com/codegangsta/cli"
+	humanize "github.com/dustin/go-humanize"
+
+	"github.com/rubiojr/go-vhd/vhd"
 )
 
 func createVHD(file, size string, options vhd.VHDOptions) {
